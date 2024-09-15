@@ -12,6 +12,17 @@
     * https://github.com/davidtkeane/rangerchat/releases/tag/v0.1.0
     * Added a .gitignore file.
 
+2024-09-16  rangerchat todo list.
+
+    * Check the brew install command.
+    * Brew install works but the script does not work when rgpt from the command line. CHECK.
+    *
+    *
+    *
+
+
+
+
 2024-09-15  rangerchat
 
     * Initial release.
@@ -34,12 +45,13 @@
     * Added more help text for rgpt.py.
     * Added spaces to rpgt.py script to look better in the terminal.
     * Added a touch of design to the script to make it look better in the terminal.Github/0_My_Github/openai-python/OpenAI-README.md
+    * Added in a check for the python version and if python is installed.
+    * Added the setup.py pip install requirements.txt.
+    * Added check for pip packages in requirements.txt.
 
 
 2024-09-15  To add in setup.py the following.
 
-    * To add in a check for the python version and if python is installed.
-    * To add to the setup.py pip install requirements.txt.
-    * To add to check for pip packages in requirements.txt.
+
 
 
