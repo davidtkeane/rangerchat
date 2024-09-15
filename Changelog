@@ -1,0 +1,32 @@
+
+2024-09-15  rgpt
+
+    * Initial release.
+    * Version 1.0.1
+    * Minimum python version supported changed. Now it's 2.7+/3.5+
+    * Created using Python Version 3.11.9
+    * Added setup.py file.
+    * Added requirements.txt file.
+    * Added error handling for the API key and other errors.
+    * Added --help and --options for rgpt.py.
+    * Added --help for setup.py.
+    * Added save_to_file() function to save the conversation to a file.
+    * Added spaces to the start of the prompt.
+    * Checks if Python is installed and ensures the Python version is compatible (2.7+ or 3.5+). If Python is not installed or the version is too old, it will notify the user.
+    * Installs requirements.txt packages during setup by using pip. It also checks whether the required packages are installed.
+    * Minimum Python version requirement is checked, and the script will not proceed if the Python version is below 2.7 or 3.5.
+    * Additional Setup Suggestions:
+    * Checking for the presence of pip and ensuring that all necessary packages are installed.
+    * Providing clear error messages and installation instructions if requirements are missing.
+    * Added more help text for rgpt.py.
+    * Added spaces to rpgt.py script to look better in the terminal.
+    * Added a touch of design to the script to make it look better in the terminal.Github/0_My_Github/openai-python/OpenAI-README.md
+
+
+2024-09-15  To add in setup.py the following.
+
+    * To add in a check for the python version and if python is installed.
+    * To add to the setup.py pip install requirements.txt.
+    * To add to check for pip packages in requirements.txt.
+
+
