@@ -2,7 +2,7 @@ class Rangerchat < Formula
     desc "A command-line tool to interact with OpenAI's GPT-4 model"
     homepage "https://github.com/davidtkeane/homebrew-rangerchat.git"
     url "https://github.com/davidtkeane/rangerchat/archive/refs/tags/v0.1.0.tar.gz"
-    sha256 "8bd0b9205f95e4bc1db3afe50779cd51b4a4a8ab45f8436ab0df1dc1c5d9ff26"
+    sha256 "d76eba977d1879ec02304db1e64d018f6c235617614fd34c32a7b7240e605326"
     license "MIT"
   
     depends_on "python@3.10"  # Or whatever Python version your project requires

@@ -1,5 +1,18 @@
 
-2024-09-15  rgpt
+2024-09-16  rangerchat
+
+    * Made a github repo for the project.
+    * Added a changelog.
+    * Added a readme.
+    * Added a requirements.txt file.
+    * Added a setup.py file.
+    * Added a rgpt.py file.
+    * Created rangerchat.rb file.
+    * Created rangerchat-0.0.1.tar.gz file. This is uploaded to the github repo.
+    * https://github.com/davidtkeane/rangerchat/releases/tag/v0.1.0
+    * Added a .gitignore file.
+
+2024-09-15  rangerchat
 
     * Initial release.
     * Version 1.0.1
