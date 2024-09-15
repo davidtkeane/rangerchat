@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-# This script is for Brew and Github. (Remove).
-
 # Created by Ranger (rgpt)
 # RangerChat-ChatGPT script for Linux and MacOS
 
@@ -21,7 +19,7 @@ from dotenv import load_dotenv
 from datetime import datetime
 
 # Set up directory and log file
-rgpt_dir = os.path.join(os.path.expanduser("~"), "rgpt")
+rgpt_dir = os.path.join(os.path.expanduser("~"), "rangerchat")
 log_file = os.path.join(rgpt_dir, "rgpt.log")
 history_file = os.path.join(rgpt_dir, "rgpt.txt")
 
@@ -149,9 +147,8 @@ def print_help():
     print("1. You can interact with the model by entering a prompt.")
     print("2. You can change the model by choosing option 2.")
     print("3. Temperature (0.0 is more deterministic, 1.0 is more creative).")
-    print("4. Check logs in '~/rgpt/rgpt.log'.")
-    print("5. Conversation history is saved in '~/rgpt/rgpt.txt'.")
-    #print("")
+    print("4. Check logs in '~/rangerchat/rgpt.log'.")
+    print("5. Conversation history is saved in '~/rangerchat/rgpt.txt'.")
     print("\n\033[94m6. For help, run: rgpt --help 💀\033[0m\n")
 
 def main():
