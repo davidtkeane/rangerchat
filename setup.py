@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-# 
+
+# Created by Ranger (rgpt)
+# RangerChat-ChatGPT Setup script for Linux and MacOS
+
+# Version 1: Created 15-09-2024.
 
 # Import necessary modules
 import os
@@ -7,6 +11,7 @@ import sys
 import subprocess
 from setuptools import setup, find_packages
 
+# Define constants
 MIN_PYTHON_VERSION = (3, 5)  # Minimum version of Python 3.5+
 REQUIRED_PACKAGES = ['openai', 'python-dotenv']  # Add required packages
 
@@ -70,7 +75,6 @@ def prompt_api_key():
         print("\033[93mDo you have an OpenAI API key?\033[0m")
         print("")
         has_key = input("Enter 'yes' if you have the key, or 'no' if you don't: ").lower()
-
         if has_key == 'no':
             print("")
             print("You can find your API key at https://platform.openai.com/account/api-keys")
@@ -83,7 +87,7 @@ def prompt_api_key():
 
 # Write the API key to a .env file in ~/rgpt/
 def create_env_file(api_key, rgpt_dir):
-    import time
+    # import time module for future use
     env_path = os.path.join(rgpt_dir, ".env")
     with open(env_path, "w") as f:
         f.write(f"OPENAI_API_KEY={api_key}\n")
@@ -93,7 +97,7 @@ def create_env_file(api_key, rgpt_dir):
     sleep = 5
     print(f"\033[92mConnecting to OpenAI to check API key validity can take {sleep} second(s)...\033[0m")
     print("")
-    print(f"\033[93mConnecting, please wait...\033[0m")
+    print("\033[93mConnecting, please wait...\033[0m")
     
 
 # Test the API key with a simple OpenAI request
@@ -169,7 +173,7 @@ check_python_version()
 check_pip_installed()
 
 # Create the ~/rgpt/ directory for all files
-rgpt_dir = os.path.join(os.path.expanduser("~"), "rgpt")
+rgpt_dir = os.path.join(os.path.expanduser("~"), "rangerchat")
 if not os.path.exists(rgpt_dir):
     os.makedirs(rgpt_dir)
 
@@ -184,7 +188,7 @@ test_api_key(rgpt_dir)
 
 # Set up shell alias
 shell_config = input("Lets create the alias. Do you use zsh or bash? (Enter 'zsh' or 'bash'): ").lower()
-alias_command = "alias rgpt='python ~/rgpt/rgpt.py'"
+alias_command = "alias rgpt='python ~/rangerchat/rgpt.py'"
 home_dir = os.path.expanduser("~")
 
 if shell_config == 'zsh':
