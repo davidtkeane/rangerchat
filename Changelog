@@ -1,3 +1,10 @@
+This is the changelog for the rangerchat project.
+by David Keane.
+
+2024-09-16  rangerchat todo list.
+
+    * Added a todo list.
+
 
 2024-09-16  rangerchat
 
@@ -12,16 +19,31 @@
     * https://github.com/davidtkeane/rangerchat/releases/tag/v0.1.0
     * Added a .gitignore file.
 
-2024-09-16  rangerchat todo list.
+    * Key Changes: Version 0.1.0
+        Welcome Message:
+        The ohai command is used to display a welcome message: Welcome to RangerChat! 💀 Installing the tool now...
+        Python Check and Installation:
+        The script checks if Python is installed by running python3 --version.
+        If Python is already installed, it displays the version.
+        If Python is not installed, the formula installs it using brew install python@3.10.
+        Running the setup.py Script:
+        The formula runs the setup.py script using system "python3", "setup.py", "install".
+        This ensures that the setup process (which prompts for the OpenAI API key) is included as part of the installation.
+        Exit Message:
+        After installation, a success message is displayed: RangerChat has been successfully installed! 🎉 You can now use 'rgpt' from the command line.
+        Testing the Installation:
+        The test do block verifies that the rgpt --help command works after installation.
 
-    * Check the brew install command.
-    * Brew install works but the script does not work when rgpt from the command line. CHECK.
-    *
-    *
-    *
-
-
-
+    * Installation Flow:
+        Check for Python:
+        If Python is installed, it shows the version and proceeds.
+        If Python is not installed, Homebrew installs the required Python version.
+        Run setup.py:
+        The formula runs setup.py, which will ask for the OpenAI API key as part of the setup process.
+        Install the rgpt Command:
+        The formula installs the rgpt.py script and creates the rgpt command.
+        Display Success Messages:
+        A welcome message is shown at the start, and a success message is shown at the end of the installation.
 
 2024-09-15  rangerchat
 
